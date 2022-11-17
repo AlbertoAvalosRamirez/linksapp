@@ -1,0 +1,45 @@
+<nav>
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Logo</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+        </ul>
+    </div>
+</nav>
+       
+
+
+<div class="container">
+    <div class="row">
+        <div class="col s12 m6 l3">
+            <div class="card">
+                <div class="card-body">
+                    <form   class="col s12" action="/links/add" method="POST">
+                        <div class="row">
+                            <div class="input-field col s12">
+                            <input id="title" name="title" type="text" placeholder="Title" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                            <input id="url" name="url" type="url" placeholder="Url" class="form-control">
+                            </div>
+                        </div>
+                            <div class="row">
+                            <div class="input-field col s12">
+                            <textarea name="description" placeholder="Description" id="description" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-control">
+                            <button class="btn waves-effect waves-light" type="submit" name="action">Send Url
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

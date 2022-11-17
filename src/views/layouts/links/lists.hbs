@@ -1,0 +1,43 @@
+<div class="container ">
+    <div class="row">
+        {{#each links}}
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="{{url }}" target="_blank">
+                            <h3 class="card-title text-uppercase">
+                                {{title}}
+                            </h3>
+                        </a>
+                        <p class="m-2">
+                            {{description}} 
+                        </p>
+                        <p> 
+                            {{timeago created_at}}
+                        </p>
+                        <a href="/links/delete/{{id}}" class="waves-effect waves-light btn-small"><i class="material-icons right">clear</i>Delete</a>
+                        <a  href="/links/edit/{{id}}" class="waves-effect waves-light btn-small"><i class="material-icons right">create</i>Edit</a>
+                    </div>
+                </div>
+            </div> 
+        {{else}}
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="card white-1">
+                        <div class="card-content black-text text-center">
+                            <p class="text-center">
+                                There are not post yet!
+
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="/links/add">Create one</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        {{/each}}
+    </div>
+
+</div>
